@@ -1,0 +1,361 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(240, 234, 214, 0.34);
+}
+
+
+nav {
+	background-color: red;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 1.5em;
+	font-weight: 600;
+	letter-spacing: .001em;
+	word-spacing: 1em;
+}
+
+nav a{
+	background-color: #FFD700;
+	color: white;
+	text-decoration: none;
+	display: block;
+	float: left;
+	padding: .9em;
+	transition: background-color ease-in-out .5s;
+}
+
+a:hover {
+	background-color: blue;
+}
+
+label {
+	background-color: #fff;
+	color: black;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: .2em;
+	display: none;
+}
+
+#memories {
+	font-size: 4em;
+}
+
+#opening {
+	padding-top: 1em;
+	padding-bottom: 3em;
+	margin-top: 1em;
+	margin-right: 1em;
+	margin-left: 1em;
+	border: 1px black solid;
+}
+
+#welcome {
+	text-align: left;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-right: 1em;
+	margin-left: 1em;
+	font-size: 1.5em;
+}
+
+.openp {
+	padding-left: 0.5em;
+}
+
+span {
+	float: left;
+	width: 0.7em;
+	font-size: 400%;
+	font-family: times;
+	line-height: 80%;
+}
+
+#toggle{
+	display: none;
+}
+
+#tops {
+	text-align: center;
+	border: 1px black solid;
+	padding: .1em;
+	margin: .1em;
+	border: solid 5px white;
+	color: black;
+	background-color: white;
+}
+
+
+#slogan {
+	font-style: italic;
+	font-size: 1em;
+	padding-bottom: .6em;
+	margin: 0 10 20 10;
+	letter-spacing: .01em;
+}
+
+.blocks {
+	width: 100%;
+}
+
+/*#yellowgreen {
+	width: 100%;
+}*/
+
+/*#bluered {
+	width: 100%;
+	float: left;
+}*/
+
+#colors {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+.blackp {
+	text-align: left;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: black;
+	margin-right: 1em;
+	margin-left: 1em;
+
+}
+
+#primary {
+	text-align: center;
+	font-size: 2em;
+	text-decoration: underline;
+	text-decoration-color: black;
+	/*border: 1px blue solid;*/
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-right: 1em;
+	margin-left: 1em;
+	/*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-gradient(linear,  left top,  left bottom, 
+        color-stop(0.00, red), 
+        color-stop(16%, yellow),
+        color-stop(32%, yellow),
+        color-stop(48%, red),
+        color-stop(60%, blue),
+        color-stop(76%, blue),
+        color-stop(1.00, violet));*/
+}
+
+#blue {
+	margin: auto;
+	display: inline-block;
+}
+
+#red {
+	margin: auto;
+	display: inline-block;
+}
+
+#yellow {
+	margin: auto;
+	display: inline-block;
+}
+
+#secondary {
+	text-align: center;
+	font-size: 2em;
+	text-decoration: underline;
+	text-decoration-color: black;
+	/*border: 1px blue solid;*/
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+#green {
+	margin: auto;
+	display: inline-block;
+}
+
+#orange {
+	margin: auto;
+	display: inline-block;
+}
+
+#purple {
+	margin: auto;
+	display: inline-block;
+	padding-bottom: 5em;
+}
+
+
+.dark {
+	width: 25%;
+	float: left;
+	padding-right: .5em;
+}
+
+
+#heads {
+	text-align: center;
+	border-color: blue;
+	font-size: 2em;
+	padding: 1em;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: green;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+@media only screen and (max-width: 1120px){
+		
+		#left {
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+
+		#right {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1020px){
+		
+		nav a {
+			font-size: .9em;
+		}
+		
+}
+
+@media only screen and (max-width: 985px){
+
+		footer {
+			font-size: 16px;
+		}
+}
+
+@media only screen and (max-width: 960px){
+	
+		nav a {
+			background-color: white;
+			color: black;
+			display: none;
+			float: none;
+			text-align: center;
+		}
+
+		label {
+			display: block;
+		}
+
+		#toggle:checked + nav a{
+			display: block;
+		}
+}
+
+@media only screen and (max-width: 910px){
+		
+		article img{
+			width: 85%;
+			float: none;
+			margin: auto;
+			padding-left: 40px;
+		}
+		span {
+			display: block;
+		}
+}
+
+@media only screen and (max-width: 720px){
+		
+		h1 {
+			font-size: 2em;
+		}
+
+		h2 {
+			font-size: 1em;
+		}
+
+		#slogan {
+			font-size: 16px;
+		}
+
+		#headline {
+			font-size: 1.1em;
+		}
+
+		#city{
+			font-size: 1em;
+		}
+
+		p{
+			font-size: 1em;
+		}
+
+		article img {
+			width: 100%;
+			padding: 0;
+		}
+
+		footer{
+			font-size: 16px;
+		}
+}
+
+@media only screen and (max-width: 440px){
+		
+		#fly{
+			font-size: 1.5em;
+		}
+
+		#welcome{
+			font-size: 1.4em;
+		}
+	
+}
