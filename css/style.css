@@ -125,29 +125,20 @@ span {
 	color: black;
 	margin-right: 1em;
 	margin-left: 1em;
+	text-decoration: none;
 
 }
 
 #primary {
 	text-align: center;
-	font-size: 2em;
-	text-decoration: underline;
-	text-decoration-color: black;
-	/*border: 1px blue solid;*/
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin-right: 1em;
 	margin-left: 1em;
-	/*-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-gradient(linear,  left top,  left bottom, 
-        color-stop(0.00, red), 
-        color-stop(16%, yellow),
-        color-stop(32%, yellow),
-        color-stop(48%, red),
-        color-stop(60%, blue),
-        color-stop(76%, blue),
-        color-stop(1.00, violet));*/
+}
+
+#primehead {
+	font-size: 2.5em; 
 }
 
 #blue {
@@ -167,14 +158,15 @@ span {
 
 #secondary {
 	text-align: center;
-	font-size: 2em;
-	text-decoration: underline;
-	text-decoration-color: black;
-	/*border: 1px blue solid;*/
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin-right: 1em;
 	margin-left: 1em;
+}
+
+#secondhead {
+	font-size: 2.5em;
+
 }
 
 #green {
@@ -206,6 +198,65 @@ span {
 	border-color: blue;
 	font-size: 2em;
 	padding: 1em;
+}
+
+#blu {
+        color: blue;
+        /*background-color: blue;*/
+        text-align: center;
+        border-color: blue;
+        font-size: 2em;
+        padding: 1em;
+}
+
+
+#rad {
+        color: red;
+        /*background-color: red;*/
+        text-align: center;
+        border-color: blue;
+        font-size: 2em;
+        padding: 1em;
+}
+
+
+#yella {
+        color: gold;
+        /*background-color: gold;*/
+        text-align: center;
+        border-color: blue;
+        font-size: 2em;
+        padding: 1em;
+}
+
+
+#groon {
+        color: green;
+        /*background-color: green;*/
+        text-align: center;
+        border-color: blue;
+        font-size: 2em;
+        padding: 1em;
+}
+
+
+#oran {
+        color: orange;
+        /*background-color: orange;*/
+        text-align: center;
+        border-color: blue;
+        font-size: 2em;
+        padding: 1em;
+}
+
+
+#purp {
+        color: purple;
+        /*background-color: purple;*/
+        text-align: center;
+        border-color: blue;
+        font-size: 2em;
+        padding: 1em;
 }
 
 .navbar {
@@ -280,11 +331,11 @@ span {
 		}
 }
 
-@media only screen and (max-width: 960px){
+/*@media only screen and (max-width: 960px){
 	
 		nav a {
-			background-color: white;
-			color: black;
+			background-color: #ffd700;
+			color: white;
 			display: none;
 			float: none;
 			text-align: center;
@@ -292,12 +343,19 @@ span {
 
 		label {
 			display: block;
+			background-color: #ffd700;
+			color: white;
+			font-size: 1.5em;
 		}
+
+		a:hover {
+			background-color: red;
+}
 
 		#toggle:checked + nav a{
 			display: block;
 		}
-}
+}*/
 
 @media only screen and (max-width: 910px){
 		
@@ -323,7 +381,7 @@ span {
 		}
 
 		#slogan {
-			font-size: 16px;
+			font-size: 1em;
 		}
 
 		#headline {
@@ -338,15 +396,81 @@ span {
 			font-size: 1em;
 		}
 
-		article img {
-			width: 100%;
-			padding: 0;
-		}
-
 		footer{
 			font-size: 16px;
 		}
 }
+
+@media only screen and (max-width: 560px){
+
+		#memories {
+			font-size: 3em;
+		}
+}
+
+@media only screen and (max-width: 500px){
+
+		nav a {
+			background-color: #ffd700;
+			color: white;
+			display: none;
+			float: none;
+			text-align: center;
+		}
+
+		label {
+			display: block;
+			background-color: #ffd700;
+			color: white;
+			font-size: 1.5em;
+		}
+
+		a:hover {
+			background-color: red;
+		}
+
+		#toggle:checked + nav a{
+			display: block;
+		}
+}	
+
+@media only screen and (max-width: 480px){
+		#blu {
+        	color: white;
+        	background-color: blue;
+}
+
+
+		#rad {
+        	color: white;
+        	background-color: red;
+
+}
+
+
+		#yella {
+        	color: white;
+        	background-color: gold;
+}
+
+
+		#groon {
+        	color: white;
+        	background-color: green;
+}
+
+
+		#oran {
+        	color: white;
+        	background-color: orange;
+}
+
+
+		#purp {
+        	color: white;
+        	background-color: purple;
+}
+}	
 
 @media only screen and (max-width: 440px){
 		
@@ -358,4 +482,30 @@ span {
 			font-size: 1.4em;
 		}
 	
+}
+
+@media only screen and (max-width: 560px){
+
+		#memories {
+			font-size: 3em;
+		}
+}
+
+@media only screen and (max-width: 560px){
+
+		#memories {
+			font-size: 3em;
+		}
+}
+
+
+@media only screen and (max-width: 426px){
+
+		#memories {
+			font-size: 2.5em;
+		}	
+
+		#slogan { 
+			font-size: 1em;	
+		}
 }
